@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* navbar part  */
+
+.navbar{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    z-index: 1;
+}
+
+.bars{
+    font-size: 30px;
+    display: none;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search input{
+padding: 5px 10px;
+border-radius: 5px 0 0 5px;
+border: 2px solid rgb(0, 0, 0);
+border-right: 0px;
+}
+
+.search label{
+ color: red;
+border: 2px solid rgb(2, 2, 2);
+border-radius: 0px 5px 5px 0;
+font-size: 17px;
+padding: 3px 5px 0px 5px ;
+margin-left: -2px;
+}
+
+.search label:hover{
+    cursor: pointer;
+}
+
+.links ul{
+    display: flex;
+    gap: 20px;
+}
+
+.links ul li a{
+    color: black;
+    font-size: 20px;
+    transition: all ease-in-out .5s;
+}
+
+.links ul li a:hover{
+color: red;
+border-bottom:1px solid black ;
+}
+
+
+
+
+
+/* First image featured on the home page */
+
+.content{
+    position: relative;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 86.3%;
+    background-image: url('images/photo-1530925486883-d9da662d497c.avif');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content h6{
+    color: white;
+    width: 30%;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    font-size: 50px;
+    font-weight:500px;
+    font-style: italic;
+}
+
+
+
+/*  feature cards of motorcycles */
+
+.introductions{
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+   align-items: center;
+   
+
+}
+
+.card{
+    display: flex;
+    gap: 15px ;
+    align-items: center;
+
+}
+
+.card img:hover{
+  transform: scale(1.1);
+}
+
+table{
+    width: 350px;
+    border: 2px solid black;
+    border-collapse:collapse;
+}
+
+th{
+    padding: 10px;
+    font-size: 30px;
+}
+
+td{
+    padding: 4px 2px;
+    border: 1px solid black;
+    align-items: center;
+    font-size: 18px;
+}
+
+.tableborderred{
+    border: 2px solid red;
+}
+
+.tableborderblue{
+    border: 2px solid blue;
+}
+
+
+@media screen and (max-width:768px){
+
+    .links{
+        display: none;
+    }
+
+    header{
+  width: 100%;
+  margin: 0 auto;
+    }
+    .bars{
+        display: block;
+    }
+
+    .content h6{
+        font-size: 30px;
+    }
+
+    .introductions{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (max-width:480px){
+  
+   .logo img{
+    width: 80px;
+    height: 80px;
+   }
+
+   header{
+  
+   }
+
+
+   .content{
+    background-position: 44% 50%;
+   }
+
+   
+   .content h6{
+    font-size: 26px;
+}
+  
+    
+}
